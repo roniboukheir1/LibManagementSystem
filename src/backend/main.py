@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi_jwt_auth import AuthJWT
 from sqlalchemy.orm import Session
-from database import init_db, SessionLocal
-from models import Book, Transaction, User
+from .database import init_db, SessionLocal
+from .models import Book, Transaction, User
 from passlib.context import CryptContext
 from pydantic import BaseModel
 from typing import List
